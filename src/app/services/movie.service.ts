@@ -16,14 +16,14 @@ export enum SearchType {
 })
 export class MovieService {
   url = 'http://www.omdbapi.com/';
-  apiKey = ''; // <-- Enter your own key here!
+  apiKey = '3f185d95'; // <-- Enter your own key here!
  
   /**
    * Constructor of the Service with Dependency Injection
    * @param http The standard Angular HttpClient to make requests
    */
   constructor(private http: HttpClient) { }
- 
+ //We just need to add the HttpClientModule to our main module file and add it to the array of imports 
   /**
   * Get data from the OmdbApi 
   * map the result to return only the results that we need
