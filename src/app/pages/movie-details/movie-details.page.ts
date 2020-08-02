@@ -20,6 +20,7 @@ export class MovieDetailsPage implements OnInit {
  
   ngOnInit() {
     // Get the ID that was passed with the URL
+    //the current snapshot
     let id = this.activatedRoute.snapshot.paramMap.get('id');
  
     // Get the information from the API
@@ -28,6 +29,7 @@ export class MovieDetailsPage implements OnInit {
     });
   }
  
+  //open website
   openWebsite() {
     window.open(this.information.Website, '_blank');
   }
